@@ -1,14 +1,11 @@
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hola, soy [TU NOMBRE] y hoy aprendí a hacer una app"
-
-if __name__ == "__main__":
-    app.run()
-import os
+    return "Hola, soy Andres y hoy aprendí a hacer una app"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
